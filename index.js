@@ -4,13 +4,35 @@ console.log(fifaData);
 console.log('its working');
 // ⚽️ M  V P ⚽️ //
 
-/* Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data 
+// Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data 
 
-(a) Home Team name for 2014 world cup final
-(b) Away Team name for 2014 world cup final
-(c) Home Team goals for 2014 world cup final
-(d) Away Team goals for 2014 world cup final
-(e) Winner of 2014 world cup final */
+// (a) Home Team name for 2014 world cup final
+// let year=[]
+// let data=[]
+var yearData=prompt("Enter the Year , Data sought","2014,Home Team Name"),year=yearData.split(",")[0],data=yearData.split(",")[1];
+console.log(year)
+console.log(data)
+// Now i want to search for the index matching the year but not with a loop (although it the same 'under the hood)
+// forEach is the "loop through them all" function, but ES5 defined several other useful "work your way through the array and do things" functions, including:
+// every (stops looping the first time the callback returns false or something falsey)
+// some (stops looping the first time the callback returns true or something truthy)
+// filter (creates a new array including elements where the filter function returns true and omitting the ones where it returns false)
+// map (creates a new array from the values returned by the callback)
+// reduce (builds up a value by repeatedly calling the callback, passing in previous values; see the spec for the details; useful for summing the contents of an array and many other things)
+// reduceRight (like reduce, but works in descending rather than ascending order)
+// < For some.year === year then console log i.
+function searcher(year){
+    for(let i=0; i<fifaData.length; i++) {
+      if (fifaData.xxx = year) { 
+        console.log(fifaData[i]);
+      }
+    }
+}
+searcher(year)
+// (b) Away Team name for 2014 world cup final
+// (c) Home Team goals for 2014 world cup final
+// (d) Away Team goals for 2014 world cup final
+// (e) Winner of 2014 world cup final
 
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
