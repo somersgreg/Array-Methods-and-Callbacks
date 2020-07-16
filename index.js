@@ -9,10 +9,10 @@ console.log('its working');
 // (a) Home Team name for 2014 world cup final
 // let year=[]
 // let data=[]
-var yearData=prompt("Enter the Year , Data sought","2014,Home Team Name"), targetYear=yearData.split(",")[0],data=yearData.split(",")[1];
-console.log('data: ', data);
-console.log('targetYear: ', targetYear);
-console.log('yearData: ', yearData);
+const popupQuery=prompt("Enter the Year , Data sought","2014,Home Team Name"), targetYear=popupQuery.split(",")[0],targetData=popupQuery.split(",")[1];
+console.log('Target Data: ', targetData);
+console.log('Target Year: ', targetYear);
+console.log('The Query: ', popupQuery);
 // >  A BAD CONSOLE LOG HERE WAS STOPPING THE REST OF MY CODE FROM RUNNING
 // >  FOR THIS STUPID REASON I DELETED ALL MY WORK.
 // <  I NEED A WAY TO WRITE A LOT OF CODE THATS ONLY FOR TESTING BUT NOT DELETE THAT CODE WHEN I FINALLY DECIDE WHICH TO GO WITH. 
@@ -31,16 +31,23 @@ console.log('yearData: ', yearData);
 // reduce (builds up a value by repeatedly calling the callback, passing in previous values; see the spec for the details; useful for summing the contents of an array and many other things)
 // reduceRight (like reduce, but works in descending rather than ascending order)
 
+// Find the index of an item in the Array
+// fruits.push('Mango')
+// // ["Strawberry", "Banana", "Mango"]
+// let pos = fruits.indexOf('Banana')
+// // 1
+
 // < For some.year === year then console log i.
+
 function fifaParse(targetYear){
     for(let i=0; i<fifaData.length; i++) {
-      if (fifaData[i].year === targetYear) { 
-        return(fifaData[i]);  // <  HOW DO I GET THE INDEX # FROM THIS?
-      }
+        if (fifaData[i].year === targetYear) {
+            return i;}
     }
 }
-console.log('fifaData[i]: ', targetYear);
-fifaParse(targetYear)
+
+fifaParse(targetYear);
+console.log("heres i ", i);
 // (b) Away Team name for 2014 world cup final
 // (c) Home Team goals for 2014 world cup final
 // (d) Away Team goals for 2014 world cup final
