@@ -4,13 +4,54 @@ console.log(fifaData);
 console.log('its working');
 // ⚽️ M  V P ⚽️ //
 
-/* Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data 
+// Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data 
 
-(a) Home Team name for 2014 world cup final
-(b) Away Team name for 2014 world cup final
-(c) Home Team goals for 2014 world cup final
-(d) Away Team goals for 2014 world cup final
-(e) Winner of 2014 world cup final */
+// (a) Home Team name for 2014 world cup final
+// let year=[]
+// let data=[]
+const popupQuery=prompt("Enter the Year , Data sought","2014,Home Team Name"), targetYear=popupQuery.split(",")[0],targetData=popupQuery.split(",")[1];
+console.log('Target Data: ', targetData);
+console.log('Target Year: ', targetYear);
+console.log('The Query: ', popupQuery);
+// >  A BAD CONSOLE LOG HERE WAS STOPPING THE REST OF MY CODE FROM RUNNING
+// >  FOR THIS STUPID REASON I DELETED ALL MY WORK.
+// <  I NEED A WAY TO WRITE A LOT OF CODE THATS ONLY FOR TESTING BUT NOT DELETE THAT CODE WHEN I FINALLY DECIDE WHICH TO GO WITH. 
+// <  I NEED TO KNOW HOW TO WATCH THE CODE RUN IN CONSOLE AND STEP SO I CAN DEBUG BETTER
+// <  I NEED TO HAVE A METHOD FOR DOING SURE INTERVAL CHACKS TO MAKE SURE MY CODE IS RUNNING
+// <  I COULD ANNOUNCE LINE NUMBERS SOMEHOW MAYBE IF I KNOW HOW TO ACCESS THAT INFORMATION
+
+// <  Now i want to search for the index matching the year but not with a loop (although it the same 'under the hood)
+// <  P$UEDOCODEING: I WANT TO FIND FIFADATA[I#] FOR THE USER DEFINED YEAR AND THEN APPLY THAT IN A SIMPLE CONSOLE LOG TO POP OFF ALL THE DESIRED INFO.
+
+// NOTES: forEach is the "loop through them all" function, but ES5 defined several other useful "work your way through the array and do things" functions, including:
+// every (stops looping the first time the callback returns false or something falsey)
+// some (stops looping the first time the callback returns true or something truthy)
+// filter (creates a new array including elements where the filter function returns true and omitting the ones where it returns false)
+// map (creates a new array from the values returned by the callback)
+// reduce (builds up a value by repeatedly calling the callback, passing in previous values; see the spec for the details; useful for summing the contents of an array and many other things)
+// reduceRight (like reduce, but works in descending rather than ascending order)
+
+// Find the index of an item in the Array
+// fruits.push('Mango')
+// // ["Strawberry", "Banana", "Mango"]
+// let pos = fruits.indexOf('Banana')
+// // 1
+
+// < For some.year === year then console log i.
+
+function fifaParse(targetYear){
+    for(let i=0; i<fifaData.length; i++) {
+        if (fifaData[i].year === targetYear) {
+            return i;}
+    }
+}
+
+fifaParse(targetYear);
+console.log("heres i ", i);
+// (b) Away Team name for 2014 world cup final
+// (c) Home Team goals for 2014 world cup final
+// (d) Away Team goals for 2014 world cup final
+// (e) Winner of 2014 world cup final
 
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
