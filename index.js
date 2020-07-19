@@ -4,10 +4,10 @@ console.log(fifaData);
 console.log('its working');
 // ⚽️ M  V P ⚽️ //
 
-// Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data 
+// Task 1: Investigate the data above. Practice accessing data by console.logging the following pieces of data 
 
 // (a) Home Team name for 2014 world cup final
-const final2014 = fifaData.filter((game) => {
+const final2014 = fifaData.filter((game) => {  // The thing in parenthesis is the fifaData.filter.  And then the arrow is saying ...
     return (game.Year === 2014) && (game.Stage === "Final")
 })
 console.log(final2014[0]["Home Team Name"])
@@ -25,9 +25,9 @@ console.log("Winner: "+ final2014[0]["Home Team Name"])
     console.log("Winner: "+ final2014[0]["Away Team Name"])
 }
 
-/* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
+/* Task 2: Create a function called getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
-function getFinals() {
+function getFinals(data) {
 
     /* code here */
 
