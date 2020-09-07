@@ -64,6 +64,12 @@ const result = words.filter(word => word.length > 6);
 
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
+
+// My example:
+let final2014 = fifaData.filter(item => (item.Year===2014) && (item.Stage==="Final"));
+// Notice: create a new array, state the existing array and . the method ( now a word representing all the things like games, or customers; => ( the things.the key === the sought value) && || < > ( the things.the key === the sought value))
+console.log(final2014)
+
 ```
 ## Syntax
 ```js
