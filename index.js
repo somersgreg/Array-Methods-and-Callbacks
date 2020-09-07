@@ -1,31 +1,21 @@
 import { fifaData } from './fifa.js';
-// console.log(fifaData);
+console.log(fifaData);
 
-// console.log('its working');
+console.log('its working');
 // ⚽️ M  V P ⚽️ //
 
-// Task 1: Investigate the data above. Practice accessing data by console.logging the following pieces of data
+/* Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data
 
-// (a) Home Team name for 2014 world cup final
-const final2014 = fifaData.filter((game) => (game.Year === 2014) && (game.Stage === "Final"))
-console.log("2014 Finals : ", final2014[0]["Home Team Name"])
+(a) Home Team name for 2014 world cup final
+(b) Away Team name for 2014 world cup final
+(c) Home Team goals for 2014 world cup final
+(d) Away Team goals for 2014 world cup final
+(e) Winner of 2014 world cup final */
 
-// (b) Away Team name for 2014 world cup final
-console.log(final2014[0]["Away Team Name"])
-// (c) Home Team goals for 2014 world cup final
-console.log(final2014[0]["Home Team Goals"])
-// (d) Away Team goals for 2014 world cup final
-console.log(final2014[0]["Away Team Goals"])
-// (e) Winner of 2014 world cup final
-if (final2014[0]["Home Team Goals"] > final2014[0]["Away Team Goals"]){
-console.log("Winner: "+ final2014[0]["Home Team Name"])
-} else {
-    console.log("Winner: "+ final2014[0]["Away Team Name"])
-}
 
-/* Task 2: Create a function called getFinals that takes `data` as an argument and returns an array of objects with only finals data */
-// when you declare a func it take parameter. argument is when you call it
-function getFinals(data) {
+/* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
+
+function getFinals(/* code here */) {
 
     /* code here */
 
@@ -86,7 +76,7 @@ function getCountryWins(/* code here */) {
     /* code here */
 
 };
-cd ..Stage
+
 getCountryWins();
 
 
