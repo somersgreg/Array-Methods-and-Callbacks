@@ -41,7 +41,7 @@ console.log(index)
 }
 }
 ```
-
+I Think this is one from chat.
 ```js
 const final2014 = fifaData.filter((item, index) => {
     if(item.Year === 2014 || item.Stage === "Final){
@@ -91,7 +91,7 @@ final2014[0].index = 828
 ------------------------------------
 ___
 
-```js
+
 let final2014 = fifaData.filter((item, index) =>{
 
     if (item.Year===2014 && item.Stage==="Final"){
@@ -110,3 +110,9 @@ let final2014 = fifaData.filter((item, index) =>{
 
 })
 ```
+
+let numbers = [4,2,6];
+
+numbers.sort = ((a,b) => b-a);
+
+console.log(numbers); // [6,4,2]

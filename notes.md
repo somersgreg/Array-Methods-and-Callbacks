@@ -73,7 +73,8 @@ console.log(final2014)
 ```
 ## Syntax
 ```js
-let newArray = arr.filter(callback(element[, index, [array]])[, thisArg])
+let newArray = arr.filter(cb ( items, index, [array]), thisArg)
+let newArray = arr.filter(callback(element, index, [array])[, thisArg])
 ```
 ## <u>Parameters</u>
 ## callback
