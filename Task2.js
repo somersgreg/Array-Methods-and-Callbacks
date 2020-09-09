@@ -27,3 +27,10 @@ function getFinals(d){
   return (a);
 }
 console.log(getFinals(fifaData))
+// ========================================
+function getFinals(da) {
+  const na = da.filter(da.Stage === "Final");
+  return na
+}
+console.log("getFinals(da)", getFinals({ da }))
+

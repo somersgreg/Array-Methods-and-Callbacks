@@ -8,6 +8,8 @@ Parameters:
  * callback function getYears
  */
 
-function getWinnersByYear(/* code here */) {}
+function getWinnersByYear(getWinners, getYears) {
+    
+}
 
 getWinnersByYear();

@@ -31,7 +31,7 @@ console.log({ final2014 }); //{final2014: Array(1)}
 
 // console.log({final2014}) // {final2014: Array(1)}
 // console.log(final2014) // [{...}]
-
+f
 // (a) Home Team name for 2014 world cup final
 console.log("2014 Finals Home Team :", final2014[0]["Home Team Name"]);
 // (b) Away Team name for 2014 world cup final

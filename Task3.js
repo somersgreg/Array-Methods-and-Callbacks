@@ -1,10 +1,21 @@
 import { fifaData } from './fifa.js';
 console.log(':  : :: Task 3 :: :  :');
 
-/* Task 3: Implement a higher-order function called `getYears` that accepts the callback function `getFinals`, and returns an array called `years` containing all of the years in the dataset */
+function getFinals(d){
+    const a = d.filter(d => d.Stage === "Final");
+    return (a);
+  }
+  console.log(getFinals(fifaData))
+
+/* Task 3: Implement a higher-order function called `getYears`
+ that accepts the callback function `getFinals`,
+ and returns an array called `years`
+ containing all of the years in the dataset */
 
 function getYears(cb){
-    const ye = cb.filter(cb."Year")
-    return({ye})
+    const y = cb[0].Year
+
+    console.log("getYears -> y", y)
+
   }
-  console.log("getYears(getFinals)", getYears(getFinals));
+  getYears(getFinals)

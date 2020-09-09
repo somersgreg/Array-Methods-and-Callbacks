@@ -31,7 +31,7 @@ const fifaWinner = () => {
     Winner = newfifaData[0]["Away Team Name"];
     console.log("Winner:", Winner)
   }
-    return Winner;
+  return Winner;
 };
 fifaWinner();
 console.log("fifaWinner -> Winner", Winner)  // index.js:38 Uncaught ReferenceError: Winner is not defined at index.js:38 (anonymous) @ index.js:38
@@ -39,11 +39,11 @@ console.log("fifaWinner -> Winner", Winner)  // index.js:38 Uncaught ReferenceEr
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
-function getFinals(da){
-  const na = da.filter(da.Stage==="Final")
+function getFinals(da) {
+  const na = da.filter(da.Stage === "Final");
   return na
 }
-console.log("getFinals(da)", getFinals({da}))
+console.log("getFinals(da)", getFinals({ da }))
 
 /* Task 3: Implement a higher-order function called `getYears` that accepts the callback function `getFinals`, and returns an array called `years` containing all of the years in the dataset */
 
@@ -68,7 +68,7 @@ Parameters:
  * callback function getYears
  */
 
-function getWinnersByYear(/* code here */) {}
+function getWinnersByYear(/* code here */) { }
 
 getWinnersByYear();
 

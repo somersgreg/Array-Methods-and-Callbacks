@@ -91,3 +91,10 @@ The array filter was called upon.
 ### thisArg <sup>*--Optional*
 Value to use as this when executing callback.
 ___
+## What is a Function?
+-A function is a subprogram designed to perform a particular task.
+-Functions are executed when they are called. This is known as invoking a function.
+-Values can be passed into functions and used within the function.
+-Functions always return a value. In JavaScript, if no return value is specified, the function will return undefined.
+-Functions are objects.
+
